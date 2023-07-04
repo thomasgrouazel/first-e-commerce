@@ -1,0 +1,47 @@
+.card_wrapper {
+    position: relative;
+    width: 350px;
+    height: 495px;
+    float: left;
+    margin-right: 10px;
+}
+
+.card_wrapper {
+    cursor: pointer;
+}
+
+.card_wrapper .Image_text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(128, 128, 128);
+    color: white;
+    height: 100px;
+    font-family: sans-serif;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+}
+
+.card_wrapper:hover .Image_text {
+    opacity: 0.7;
+    visibility: visible;
+    background-color: rgba(128, 128, 128);
+}
+
+.card_wrapper .Image_Card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /*transition: visibility 0s, opacity 0.5s linear;*/
+}
+
+.card_wrapper .Image_Card_Hover {
+    object-fit: cover;
+}
+
+.card_wrapper:hover .Image_Card {
+    opacity: 0;
+    /*transition: visibility 0s, opacity 0.5s linear;*/
+}
